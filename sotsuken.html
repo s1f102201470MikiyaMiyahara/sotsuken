@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卒業研究 メインページ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f9;
+        }
+        .link-button {
+            transition: all 0.3s ease;
+        }
+        /* グループごとの色 */
+        .group-sokejori { background-color: #008080; } /* 濃い青緑 */
+        .group-march { background-color: #cc0000; } /* 濃い赤 */
+        .group-kandoritsu { background-color: #800080; } /* 濃い紫 */
+        .group-tocky { background-color: #006400; } /* 濃い緑 */
+        .group-nittokomasen { background-color: #4A5568; } /* 濃いグレー */
+
+        /* ホバー時の色 */
+        .group-sokejori:hover { background-color: #006666; }
+        .group-march:hover { background-color: #b30000; }
+        .group-kandoritsu:hover { background-color: #660066; }
+        .group-tocky:hover { background-color: #005000; }
+        .group-nittokomasen:hover { background-color: #2D3748; }
+
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-2xl bg-white p-8 rounded-xl shadow-2xl">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-6 border-b-4 border-indigo-600 pb-3 text-center">
+            🎓 卒業研究 資料・分析結果ハブ
+        </h1>
+
+        <div class="text-center mb-8">
+            <p class="text-xl text-gray-700 font-bold mb-3">項目別 感情スコア比較分析 (8クラス)</p>
+            <p class="text-sm text-gray-500 font-medium">表示したい大学グループを選択してください。</p>
+        </div>
+
+        <nav class="space-y-4">
+            
+            <!-- 早慶上理 リンク -->
+            <a href="sokeijori8.html" class="link-button group-sokejori block text-white font-extrabold py-4 px-6 rounded-xl text-xl text-center transition duration-300 transform hover:scale-[1.02] shadow-xl">
+                早慶上理 比較
+                <span class="block text-sm font-normal opacity-90 mt-1">(早稲田, 慶應義塾, 上智, 東京理科)</span>
+            </a>
+
+            <!-- MARCH リンク -->
+            <a href="march8.html" class="link-button group-march block text-white font-extrabold py-4 px-6 rounded-xl text-xl text-center transition duration-300 transform hover:scale-[1.02] shadow-xl">
+                MARCH 比較
+                <span class="block text-sm font-normal opacity-90 mt-1">(明治, 青山学院, 立教, 中央, 法政)</span>
+            </a>
+
+            <!-- 関関同立 リンク -->
+            <a href="kankandoritsu8.html" class="link-button group-kandoritsu block text-white font-extrabold py-4 px-6 rounded-xl text-xl text-center transition duration-300 transform hover:scale-[1.02] shadow-xl">
+                関関同立 比較
+                <span class="block text-sm font-normal opacity-90 mt-1">(関西, 関西学院, 同志社, 立命館)</span>
+            </a>
+
+            <!-- TOCKY リンク -->
+            <a href="tocky8.html" class="link-button group-tocky block text-white font-extrabold py-4 px-6 rounded-xl text-xl text-center transition duration-300 transform hover:scale-[1.02] shadow-xl">
+                TOCKY 比較
+                <span class="block text-sm font-normal opacity-90 mt-1">(筑波, お茶の水女子, 千葉, 神戸, 横浜国立)</span>
+            </a>
+            
+            <!-- 日東駒専 リンク (元のリンク) -->
+            <a href="nittokomasen8.html" class="link-button group-nittokomasen block text-white font-extrabold py-4 px-6 rounded-xl text-xl text-center transition duration-300 transform hover:scale-[1.02] shadow-xl">
+                日東駒専 比較
+                <span class="block text-sm font-normal opacity-90 mt-1">(日本, 東洋, 駒澤, 専修)</span>
+            </a>
+
+        </nav>
+        
+        <div class="mt-8 text-center text-sm text-gray-400">
+            <p>※分析結果の閲覧には、対応するPNG画像ファイルが必要です。</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関関同立 比較グラフ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f3ff; /* 薄い紫の背景 */
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl font-extrabold text-purple-800 mb-8 border-b-4 border-purple-400 pb-3 text-center">
+            関関同立 項目別 比較分析グラフ
+        </h1>
+        
+        <!-- メインコンテンツ (グラフ画像を大きく配置) -->
+        <div class="grid grid-cols-1 gap-10">
+
+            <!-- グラフ 1: 総合評価の比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-red-500 pl-3">総合評価の比較</h2>
+                <img src="comparison_kandoritsu_総合評価.png" 
+                    alt="関関同立 総合評価感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-red-500/50 object-cover">
+            </div>
+
+            <!-- グラフ 2: 講義・授業の比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-blue-500 pl-3">講義・授業の比較</h2>
+                <img src="comparison_kandoritsu_講義・授業.png" 
+                    alt="関関同立 講義・授業感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-blue-500/50 object-cover">
+            </div>
+
+            <!-- グラフ 3: 研究室・ゼミの比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-green-500 pl-3">研究室・ゼミの比較</h2>
+                <img src="comparison_kandoritsu_研究室・ゼミ.png" 
+                    alt="関関同立 研究室・ゼミ感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-green-500/50 object-cover">
+            </div>
+
+            <!-- グラフ 4: 就職・進学の比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-yellow-500 pl-3">就職・進学の比較</h2>
+                <img src="comparison_kandoritsu_就職・進学.png" 
+                    alt="関関同立 就職・進学感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-yellow-500/50 object-cover">
+            </div>
+
+            <!-- グラフ 5: アクセス・立地の比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-purple-500 pl-3">アクセス・立地の比較</h2>
+                <img src="comparison_kandoritsu_アクセス・立地.png" 
+                    alt="関関同立 アクセス・立地感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-purple-500/50 object-cover">
+            </div>
+
+            <!-- グラフ 6: 施設・設備の比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-orange-500 pl-3">施設・設備の比較</h2>
+                <img src="comparison_kandoritsu_施設・設備.png" 
+                    alt="関関同立 施設・設備感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-orange-500/50 object-cover">
+            </div>
+
+            <!-- グラフ 7: 友人・恋愛の比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-pink-500 pl-3">友人・恋愛の比較</h2>
+                <img src="comparison_kandoritsu_友人・恋愛.png" 
+                    alt="関関同立 友人・恋愛感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-pink-500/50 object-cover">
+            </div>
+
+            <!-- グラフ 8: 学生生活の比較 -->
+            <div class="bg-white p-6 rounded-xl shadow-xl transition hover:shadow-2xl">
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-l-4 border-teal-500 pl-3">学生生活の比較</h2>
+                <img src="comparison_kandoritsu_学生生活.png" 
+                    alt="関関同立 学生生活感情スコア比較グラフ"
+                    class="w-full h-auto rounded-lg border-2 border-teal-500/50 object-cover">
+            </div>
+
+        </div>
+
+        <!-- 戻るボタン -->
+        <div class="mt-10 text-center">
+            <a href="sotsuken.html" class="inline-flex items-center bg-gray-700 hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                &larr; メインページに戻る
+            </a>
+        </div>
+    </div>
+</body>
+</html>
